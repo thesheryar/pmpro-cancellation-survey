@@ -1,0 +1,151 @@
+/* --- Modern Cancellation Form Styles --- */
+
+/* Style the main PMPro form card */
+#pmpro_form.pmpro_card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+  }
+  
+  /* Style the container for our new fields */
+  #pmpro_custom_cancel_form {
+    background-color: #f8fafc; /* Light gray background */
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem; /* Use rem for spacing */
+    margin: 1.5rem 0;
+  }
+  
+  /* Style each question block */
+  #pmpro_custom_cancel_form .pmpro_form_field {
+    padding-bottom: 1.5rem;
+  }
+  
+  /* NEW: Add the divider line you requested */
+  #pmpro_custom_cancel_form .pmpro_form_field:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 0.1 opacity dark grey */
+    margin-bottom: 1.5rem; /* Space after the line */
+  }
+  
+  /* Style labels */
+  #pmpro_custom_cancel_form label,
+  #pmpro_custom_cancel_form .pmpro_form_legend {
+    display: block;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Style textareas and selects */
+  #pmpro_custom_cancel_form textarea,
+  #pmpro_custom_cancel_form select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important */
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  #pmpro_custom_cancel_form textarea:focus,
+  #pmpro_custom_cancel_form select:focus {
+    border-color: #3b82f6; /* Blue focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+    outline: none;
+  }
+  
+  #pmpro_custom_cancel_form textarea {
+    min-height: 120px;
+  }
+  
+  /* Style fieldsets for radio/checkbox groups */
+  #pmpro_custom_cancel_form .pmpro_form_fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style each radio/checkbox option */
+  #pmpro_custom_cancel_form .pmpro_form_option {
+    display: block; /* Stack options */
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+  
+  #pmpro_custom_cancel_form .pmpro_form_option:hover {
+    background-color: #f8fafc;
+  }
+  
+  #pmpro_custom_cancel_form .pmpro_form_option input {
+    margin-right: 0.75rem;
+    vertical-align: middle;
+    transform: scale(1.1);
+  }
+  
+  #pmpro_custom_cancel_form .pmpro_form_option label {
+    display: inline; /* Keep label next to input */
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #475569;
+  }
+  
+  /* --- Button Styling --- */
+  
+  /* Style the "Yes, cancel" (submit) button */
+  #pmpro_form input[type='submit'].pmpro_btn-submit {
+    /* Use styles from your theme if they exist, or add your own */
+    background-color: #dc2626; /* Red for destructive action */
+    border-color: #dc2626;
+    color: #ffffff;
+  }
+  
+  #pmpro_form input[type='submit'].pmpro_btn-submit:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+    color: #ffffff;
+  }
+  
+  /* THIS IS THE DISABLED STYLE YOU WANTED */
+  #pmpro_form input[type='submit'].pmpro_btn-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #ef4444; /* Lighter red when disabled */
+    border-color: #ef4444;
+  }
+  
+  /* Style the "No, keep" (cancel) button */
+  #pmpro_form a.pmpro_btn-cancel {
+    background-color: transparent;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    text-decoration: none;
+  }
+  
+  #pmpro_form a.pmpro_btn-cancel:hover {
+    background-color: #f8fafc;
+    border-color: #94a3b8;
+    color: #334155;
+  }
+  
+  /* --- Error Styling --- */
+  #pmpro_custom_cancel_form .pmpro_form_field-error > label,
+  #pmpro_custom_cancel_form .pmpro_form_field-error > .pmpro_form_legend {
+    color: #dc2626;
+  }
+  
+  #pmpro_custom_cancel_form .pmpro_form_field-error > textarea,
+  #pmpro_custom_cancel_form .pmpro_form_field-error > select {
+    border: 2px solid #dc2626;
+  }
+  
+  #pmpro_custom_cancel_form .pmpro_form_field-error .pmpro_form_option {
+    border: 2px solid #dc2626;
+    background-color: #fee2e2;
+  }
