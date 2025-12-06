@@ -2,6 +2,8 @@
 
 **A custom WordPress plugin to capture user feedback upon membership cancellation.**
 
+<img src="https://raw.githubusercontent.com/thesheryar/thesheryar/refs/heads/main/PMPro-Cancel.png" alt="Survey Modal" width="600">
+
 
 ## 📋 Description
 
